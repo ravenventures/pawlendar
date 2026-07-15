@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawlendar | Grooming Status</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="admin-appointment.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="../paw-pattern.css">
+</head>
+<body>
+
+    <header>
+        <nav class="main-nav">
+            <div class="logo"><i class="fa-solid fa-paw"></i> Pawlendar</div>
+
+            <ul>
+                <li><a href="admin-dashboard.html">Dashboard</a></li>
+                <li><a class="active" href="admin-appointment.html">Appointments</a></li>
+                <li><a href="admin-services.html">Services</a></li>
+                <li><a href="admin-staff.html">Staff</a></li>
+            </ul>
+
+            <button class="nav-btn">Logout</button>
+        </nav>
+    </header>
+
+    <section class="appointments-hero">
+        <div class="appointments-hero-content">
+            <h1>Appointment Status</h1>
+
+            <p>
+                Manage grooming appointments and update their progress
+                from check-in until completion.
+            </p>
+        </div>
+    </section>
+
+    <section class="appointments-dashboard">
+
+        <h2>Today's Grooming Queue</h2>
+
+        <div class="table-container">
+
+            <table class="appointment-table">
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Pet</th>
+                        <th>Owner</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Groomer</th>
+                        <th>Status</th>
+                        <th>Payment</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="appointmentTableBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <script src="admin-appointment.js"></script>
+
+</body>
+</html>

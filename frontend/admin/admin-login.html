@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawlendar | Admin Login</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./admin-login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="../paw-pattern.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo"><i class="fa-solid fa-paw"></i> Pawlendar</div>
+            <ul>
+                <li><a href="../customer/index.html">Home</a></li>
+                <li><a href="../customer/about.html">About</a></li>
+                <li><a href="../customer/service.html">Services</a></li>
+                <li><a href="../customer/staff-info.html">Staff</a></li>
+                <li><a href="../customer/appointment.html">Appointments</a></li>
+            </ul>
+            <a href="../customer/login.html" class="nav-btn">Login or Sign-Up</a>
+        </nav>
+    </header>
+    <div class="main-container">
+        <div class="left-panel">
+            <div class="logo-area">
+                <i class="fa-solid fa-paw"></i>
+                <span class="brand-name">Pawlendar Admin</span>
+            </div>
+
+            <h1 class="welcome-text">Admin Access</h1>
+            <p class="sub-text">Securely manage appointments, services, and customer schedules from one place.</p>
+
+            <div class="image-wrapper">
+                <img src="https://images.unsplash.com/photo-1511044568932-338cba0ad803?auto=format&fit=crop&q=80&w=600" alt="Admin workspace" class="pet-image">
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="form-box">
+                <h2 class="form-title">Admin Sign In</h2>
+                <p class="form-subtitle">Enter your staff credentials to continue.</p>
+
+                <form id="adminLoginForm">
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                    </div>
+
+                    <div class="forgot-pass">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="btn-login">Log In</button>
+                </form>
+
+                <p class="switch-page">
+                    <a href="../customer/login.html">Back to Customer Login</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="admin-login.js"></script>
+</body>
+</html>
